@@ -68,6 +68,7 @@ def send_code(request):
             recipient_list=[user.email],
         )
         return Response(data, status=status.HTTP_200_OK)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)    
 
 
 @api_view(['POST'])
