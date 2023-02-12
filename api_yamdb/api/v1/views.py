@@ -10,13 +10,13 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
 from reviews.models import Category, Genre, Review, Title
 from Users.models import User
-from .mixins import ListCreateDestroy
 
 from .filters import TitleFilter
+from .mixins import ListCreateDestroy
 from .permissions import (IsAdmin, IsAdminModeratAuthorOrReadOnly,
                           IsAdminOrReadOnly)
 from .serializers import (CategorySerializer, CommentSerializer,
-                          GenreSerializer, ConfirmationCodeSerializer,
+                          ConfirmationCodeSerializer, GenreSerializer,
                           GetTitleSerializer, MeUpdateSerializer,
                           NewUserRegSerializer, ReviewSerializer,
                           TitleSerializer, UserSerializer)
