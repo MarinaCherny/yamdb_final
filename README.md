@@ -1,6 +1,7 @@
 # CI и CD проекта api_yamdb
 
 ![example workflow](https://github.com/MarinaCherny/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 Проект развернут по адресу http://84.201.154.76/redoc
 
 ## Описание
@@ -30,7 +31,7 @@
   + перейти в директорию с файлом docker-compose.yaml и выполните:
     ```scp docker-compose.yaml <username>@<ip_address>:/home/<username>/docker-compose.yaml```
   + перейти в директорию с файлом default.conf.template и выполните:
-    ```scp default.conf.template <username>@<ip_address>:/home/<username>/nginx/templates/default.conf.template``
+    ```scp default.conf.template <username>@<ip_address>:/home/<username>/nginx/templates/default.conf.template```
 4. Добавьте в GitHub в secrets следующие переменные:
     ```
     DB_ENGINE=django.db.backends.postgresql
